@@ -22,7 +22,10 @@ const Nav = () => {
           </ul>
         </div>
 
-        <div className="ham-menu" onClick={toggleMenu}>
+        <div
+          className={`ham-menu ${isActive ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
           <span></span>
           <span></span>
           <span></span>

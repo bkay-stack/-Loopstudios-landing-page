@@ -42,8 +42,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: 1px solid red;
-  background-color: black;
+  /* outline: 1px solid red; */
+  /* background-color: black; */
   padding: 1rem;
   position: relative;
 }
@@ -84,7 +84,7 @@ header {
   cursor: pointer;
 }
 .ham-menu span {
-  height: 5px;
+  height: 3px;
   width: 100%;
   background-color: #fff;
   border-radius: 25px;
