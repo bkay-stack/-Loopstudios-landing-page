@@ -68,7 +68,6 @@ header {
   font-size: 1.9rem;
   transition: 0.3s ease;
   padding: 3rem;
-  outline: 1px solid red;
 }
 
 .off-screen-menu ul li {
@@ -125,13 +124,13 @@ header {
     /* position: relative; */
   }
 
-  .container {
-    margin-top: 0;
+  .nav-wrap {
+    outline: 1px solid red;
   }
 
   .logo-wrap h1 {
     position: relative;
-    font-size: 2rem;
+    font-size: 1.9rem;
     z-index: 9999999;
   }
 
@@ -153,20 +152,36 @@ header {
   }
 
   .off-screen-menu {
-    background-color: beige;
-    position: fixed;
+    background-color: initial;
+    height: initial;
+    width: initial;
+    max-width: initial;
+    position: initial;
+    top: initial;
+    right: initial;
+    display: initial;
+    flex-direction: initial;
+    align-items: initial;
+    justify-content: initial;
+    text-align: initial;
+    font-size: 1rem;
+    transition: initial;
+    padding: initial;
+  }
 
-    right: 0;
+  .off-screen-menu {
+    /* background-color: beige; */
 
-    display: flex;
-    flex-direction: row;
+    /* right: 0; */
+
+    /* display: flex; */
+    /* flex-direction: row; */
   }
 
   .off-screen-menu ul {
     position: relative;
     list-style: none;
     color: #fff;
-    outline: 1px solid green;
     display: flex;
     justify-content: center;
   }
