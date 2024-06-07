@@ -9,16 +9,12 @@
 body {
   font-family: "Alata", sans-serif;
   font-weight: 600;
-  /* font-size: 5rem; */
-  width: 100%;
-  outline: 1px solid red;
   font-style: normal;
 }
 
 .container {
-  max-width: 1400px;
-  /* padding: 2rem; */
-  /* font-size: 5rem; */
+  max-width: 1200px;
+  /* margin: 0 auto; */
 }
 
 img {
@@ -28,14 +24,15 @@ img {
 
 header {
   color: #fff;
-  height: 100vh;
-  position: relative;
+  /* position: relative; */
   background: url("./assets/mobile/image-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
+  background-size: 100%;
+
+  /* width: 100%; */
+  height: 90vh;
 }
 
 .nav-wrap {
@@ -46,6 +43,12 @@ header {
   /* background-color: black; */
   padding: 1rem;
   position: relative;
+}
+
+.logo-wrap h1 {
+  position: relative;
+
+  z-index: 9999999;
 }
 
 .off-screen-menu {
@@ -65,6 +68,7 @@ header {
   font-size: 1.9rem;
   transition: 0.3s ease;
   padding: 3rem;
+  outline: 1px solid red;
 }
 
 .off-screen-menu ul li {
@@ -112,4 +116,58 @@ header {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Wide screen
+ */
+@media screen and (min-width: 693px) {
+  body {
+    /* position: relative; */
+  }
+
+  .container {
+    margin-top: 0;
+  }
+
+  .logo-wrap h1 {
+    position: relative;
+    font-size: 2rem;
+    z-index: 9999999;
+  }
+
+  header {
+    margin-top: 0;
+    color: #fff;
+    position: relative;
+    background: url("./assets/desktop/image-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
+  .off-screen-menu {
+    background-color: beige;
+    position: fixed;
+
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .off-screen-menu ul {
+    position: relative;
+    list-style: none;
+    color: #fff;
+    outline: 1px solid green;
+    display: flex;
+    justify-content: center;
+  }
 }
