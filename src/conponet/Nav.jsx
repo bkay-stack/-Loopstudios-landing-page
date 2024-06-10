@@ -8,8 +8,8 @@ const Nav = () => {
   };
   return (
     <nav className="nav-bar">
-      <div className="nav-wrap">
-        <div className="logo-wrap">
+      <div className="logo-wrap show">
+        <div className="logo">
           <h1>loopstudio</h1>
         </div>
         <div className={`off-screen-menu ${isActive ? "visible" : ""}`}>
@@ -21,15 +21,15 @@ const Nav = () => {
             <li>Support</li>
           </ul>
         </div>
+      </div>
 
-        <div
-          className={`ham-menu ${isActive ? "active" : ""}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div
+        className={`ham-menu ${isActive ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   );
