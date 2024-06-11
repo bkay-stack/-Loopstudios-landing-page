@@ -119,20 +119,14 @@ header {
 
   .logo-wrap {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    text-align: center;
     gap: 30rem;
-
+    text-align: center;
     margin-top: 1.3rem;
-    outline: 1px solid red;
-  }
-  .logo-wrap {
-    display: initial;
-    flex-direction: initial;
   }
 
-  .off-screen-menu ul {
+  .logo-wrap ul {
     list-style: none;
     display: flex;
     gap: 3rem;
