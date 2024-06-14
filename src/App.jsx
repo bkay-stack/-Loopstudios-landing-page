@@ -1,4 +1,4 @@
-import Header from "./conponet/Header";
+import Header from "./componet/header/Header";
 function App() {
   return (
     <div className="container">
