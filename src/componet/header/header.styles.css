@@ -12,8 +12,11 @@ header {
 .hero {
   border: 2px solid #fff;
   margin: 2rem;
-
+  height: 50vh;
   outline: 5px solid red;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
 }
 
 .hero h1 {
