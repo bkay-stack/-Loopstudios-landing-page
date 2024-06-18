@@ -11,7 +11,7 @@ const Nav = () => {
   };
   return (
     <nav className={`nav-bar ${isActive ? "active" : ""}`}>
-      <div className="container">
+      <div className={`container ${isActive ? "active" : ""}`}>
         <div className="logo">
           <h1>loopstudio</h1>
         </div>

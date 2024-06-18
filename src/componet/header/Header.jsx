@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <Nav />
       <div className="hero">
-        <h1>Immersive experiences that deliver The leader in interactive VR</h1>
+        <h1 className="move">Immersive experiences that deliver</h1>
       </div>
     </header>
   );

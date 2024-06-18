@@ -1,0 +1,29 @@
+.showcase {
+  display: flex;
+  text-align: center;
+  /* align-items: center; */
+  flex-direction: column-reverse;
+}
+
+.showcase h1 {
+  font-size: 2.9rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  line-height: 0.8;
+  margin-bottom: 1.4rem;
+}
+
+.showcase p {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.4;
+  opacity: 0.5;
+}
+
+/* Article PIcture */
+.artilce-pic {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 680px) {
+}
