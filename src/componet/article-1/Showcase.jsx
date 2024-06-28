@@ -1,10 +1,11 @@
-import React from "react";
-import { useState } from "react";
+import React, { useContext } from "react";
 import "./showcase.styles.css";
 import ArticlePic from "../../assets/mobile/image-interactive.jpg";
+import { AppContext } from "../../context/global-context";
 const Showcase = () => {
+  const { isActive } = useContext(AppContext);
   return (
-    <div className="showcase">
+    <div className={`showcase ${isActive ? "active" : ""}`}>
       <div className="article-note">
         <h1>The leader in interactive VR</h1>
         <p>

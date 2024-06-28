@@ -1,21 +1,19 @@
-import React from "react";
-import { useState } from "react";
+import React, { useContext } from "react";
+
 import "./nav.styles.css";
 import Ham from "../../assets/icons/icon-hamburger.svg";
 import Close from "../../assets/icons/icon-close.svg";
+import { AppContext } from "../../context/global-context";
 const Nav = () => {
-  const [isActive, setIsActive] = useState(false);
+  const { toggleMenu, isActive } = useContext(AppContext);
 
-  const toggleMenu = () => {
-    setIsActive(!isActive);
-  };
   return (
     <nav className={`nav-bar ${isActive ? "active" : ""}`}>
       <div className={`container ${isActive ? "active" : ""}`}>
         <div className="logo">
           <h1>loopstudio</h1>
         </div>
-
+        {/* nav */}
         <div className="">
           <ul className={`nav-list ${isActive ? "active" : ""}`}>
             <li>About</li>
@@ -24,6 +22,7 @@ const Nav = () => {
             <li>Product</li>
             <li>Support</li>
           </ul>
+          {/* Ham buttons */}
           <div
             className={`ham-menu ${isActive ? "active" : ""}`}
             onClick={toggleMenu}

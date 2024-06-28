@@ -1,15 +1,136 @@
+.picture-grid-item {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 2.8rem;
+}
 .creation-header {
   font-size: 2.9rem;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
-}
-
-.picture-grid-item {
-  margin-top: 2.8rem;
+  line-height: 0.8;
+  margin-bottom: 1.4rem;
 }
 
 .picture-grid-items {
   display: grid;
   gap: 2rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 150;
+  width: 40%;
+
+  outline: 1px solid black;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 0%);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #333;
+  transform: scale(0.95);
+}
+
+.pictures-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pictures-items h1 {
+  font-size: 1.9rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  text-align: left;
+  margin-top: 6rem;
+  margin-left: 1rem;
+}
+
+.deep {
+  background: url(../../assets/mobile/image-deep-earth.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #fff;
+}
+
+.night {
+  background: url(../../assets/mobile/image-night-arcade.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #fff;
+}
+
+.soccer {
+  background: url(../../assets/mobile/image-soccer-team.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #fff;
+}
+
+.grid {
+  background: url(../../assets/mobile/image-grid.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #fff;
+}
+
+.above {
+  background: url(../../assets/mobile/image-from-above.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #fff;
+}
+
+.pocket {
+  background: url(../../assets/mobile/image-pocket-borealis.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #fff;
+}
+.curiosity {
+  background: url(../../assets/mobile/image-curiosity.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #fff;
+}
+
+.fisheye {
+  background: url(../../assets/mobile/image-fisheye.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  color: #fff;
 }

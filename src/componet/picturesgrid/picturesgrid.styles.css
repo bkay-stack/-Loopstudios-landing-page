@@ -1,7 +1,17 @@
-.pictures-items {
+/* .pictures-items {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.pictures-items h1 {
+  font-size: 1.9rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  text-align: left;
+  margin-top: 6rem;
+  margin-left: 1rem;
 }
 
 .deep {
@@ -73,4 +83,4 @@
   background-repeat: no-repeat;
   height: 20vh;
   color: #fff;
-}
+} */
