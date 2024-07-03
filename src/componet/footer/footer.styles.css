@@ -1,0 +1,37 @@
+footer {
+  background-color: hsl(0, 0%, 0%);
+  color: #fff;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* footer header */
+
+.footer-header h2 {
+  font-family: "Alata", sans-serif;
+  font-weight: 600;
+}
+
+.footer-header ul li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+/* footer socials */
+
+.footer-socials {
+  display: flex;
+  margin-top: 3rem;
+  gap: 0.9rem;
+}
+
+.footer-content-p p {
+  margin-top: 0.4rem;
+  color: hsl(0, 0%, 41%);
+  /* display: block; */
+}

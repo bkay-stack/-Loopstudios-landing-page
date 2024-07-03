@@ -23,6 +23,10 @@
     background-color: #000;
   }
 
+  .nav-list {
+    position: fixed;
+  }
+
   .ham-menu {
     display: block;
     cursor: pointer;

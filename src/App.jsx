@@ -1,6 +1,6 @@
 import Showcase from "./componet/article-1/Showcase";
 import PictureGrid from "./componet/creation/PictureGrid";
-// import Footer from "./componet/footer/Footer";
+import Footer from "./componet/footer/Footer";
 import Header from "./componet/header/Header";
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Header />
       <Showcase />
       <PictureGrid />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
