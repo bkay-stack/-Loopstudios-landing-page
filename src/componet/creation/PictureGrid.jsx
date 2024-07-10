@@ -13,7 +13,18 @@ const PictureGrid = () => {
 
   return (
     <div className={`picture-grid-item ${isActive ? "active" : ""}`}>
-      <h1 className="creation-header">Our Creation</h1>
+      <div className="left">
+        <div className="creation-wrap">
+          {" "}
+          <span className=" creation-header">OUR CREATION</span>
+        </div>
+        <div className="btn-wrap">
+          <button onClick={toggle} className={"btn-top"}>
+            SEE ALL
+          </button>
+        </div>
+      </div>
+
       <div className="pictures-items">
         <div className="deep">
           <h1>Deep Earth</h1>
@@ -45,9 +56,9 @@ const PictureGrid = () => {
           </>
         )}
       </div>
-      <div onClick={toggle} className={"btn"}>
+      <button onClick={toggle} className={"btn"}>
         See ALL
-      </div>
+      </button>
     </div>
   );
 };

@@ -4,14 +4,16 @@
   flex-direction: column;
   margin-top: 2.8rem;
 }
-
+/* Header */
 .creation-header {
-  font-size: 2.9rem;
+  font-size: 1.4rem;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   line-height: 0.8;
-  margin-bottom: 1.4rem;
+  margin-bottom: 2rem;
+
+  outline: 1px solid red;
 }
 
 .picture-grid-items {
@@ -19,10 +21,14 @@
   gap: 2rem;
 }
 
+.btn-top {
+  display: none;
+}
+
 .btn {
   margin-top: 1rem;
   padding: 6px;
-  border-radius: 3px;
+  border: none;
   cursor: pointer;
   display: flex;
   text-align: center;
@@ -34,7 +40,7 @@
   font-family: "Josefin Sans", sans-serif;
   font-weight: 150;
   width: 40%;
-
+  background-color: #fff;
   outline: 1px solid black;
 }
 
@@ -134,4 +140,45 @@
   background-repeat: no-repeat;
   height: 20vh;
   color: #fff;
+}
+
+@media (min-width: 690px) {
+  .left {
+    display: flex;
+    outline: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .creation-header {
+    font-size: 1.4rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    line-height: 0.8;
+    margin-bottom: 1.4rem;
+  }
+
+  .btn-top {
+    margin-top: 1rem;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 150;
+    width: 40%;
+
+    outline: 1px solid black;
+  }
+
+  .hide {
+    display: none;
+  }
 }
