@@ -6,23 +6,22 @@
 }
 /* Header */
 .creation-header {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   line-height: 0.8;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
+}
 
-  outline: 1px solid red;
+.hide2 {
+  display: none;
 }
 
 .picture-grid-items {
   display: grid;
+  outline: 1px solid red;
   gap: 2rem;
-}
-
-.btn-top {
-  display: none;
 }
 
 .btn {
@@ -39,7 +38,7 @@
   transition: background-color 0.3s, transform 0.3s;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 150;
-  width: 40%;
+  width: 30%;
   background-color: #fff;
   outline: 1px solid black;
 }
@@ -142,43 +141,150 @@
   color: #fff;
 }
 
+/* Wide screen */
+
 @media (min-width: 690px) {
-  .left {
+  .picture-grid-item {
     display: flex;
-    outline: 1px solid red;
-    justify-content: space-between;
-    align-items: center;
   }
 
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    padding-right: 6.3rem;
+  }
+
+  /* Header */
   .creation-header {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    padding-left: 6.3rem;
+  }
+
+  .see-all {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px;
+    outline: 1px solid black;
+    background-color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 150;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 1.4rem;
+    width: 10%;
+  }
+
+  .see-all:hover {
+    background-color: hsl(0, 0%, 0%);
+    transform: scale(1.05);
+    color: #fff;
+  }
+
+  .see-all:active {
+    background-color: #333;
+    transform: scale(0.95);
+  }
+
+  .hide1 {
+    display: none;
+  }
+
+  /* Grids */
+  .pictures-items {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pictures-items h1 {
+    font-size: 1.9rem;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
-    line-height: 0.8;
-    margin-bottom: 1.4rem;
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: 1rem;
   }
 
-  .btn-top {
-    margin-top: 1rem;
-    padding: 6px;
-    border-radius: 3px;
-    cursor: pointer;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 150;
-    width: 40%;
+  .deep {
+    background: url(../../assets/desktop/image-deep-earth.jpg);
+    background-size: cover;
+    background-position: center;
 
-    outline: 1px solid black;
+    background-repeat: no-repeat;
+    height: 50svh;
+    width: 20%;
   }
 
-  .hide {
-    display: none;
+  .night {
+    background: url(../../assets/desktop/image-night-arcade.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50svh;
+    width: 20%;
+  }
+
+  .soccer {
+    background: url(../../assets/desktop/image-soccer-team.jpg);
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 20%;
+  }
+
+  .grid {
+    background: url(../../assets/desktop/image-grid.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50svh;
+    width: 20%;
+  }
+
+  .above {
+    background: url(../../assets/desktop/image-from-above.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50svh;
+    width: 20%;
+    color: #fff;
+  }
+
+  .pocket {
+    background: url(../../assets/desktop/image-pocket-borealis.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50svh;
+    width: 20%;
+    color: #fff;
+  }
+  .curiosity {
+    background: url(../../assets/desktop/image-curiosity.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50svh;
+    width: 20%;
+    color: #fff;
+  }
+
+  .fisheye {
+    background: url(../../assets/desktop/image-fisheye.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50svh;
+    width: 20%;
+    color: #fff;
   }
 }

@@ -26,4 +26,31 @@
 }
 
 @media screen and (min-width: 680px) {
+  .showcase {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 5rem;
+
+    position: relative;
+  }
+
+  .artilce-pic {
+    width: 80%;
+    margin-right: 14rem;
+  }
+
+  .cover {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    padding: 95px;
+    margin-top: 1.9rem;
+    max-width: 540px;
+    /* width: 100%; */
+    background: #fff;
+    text-align: left;
+    /* outline: 1px solid red; */
+  }
 }
