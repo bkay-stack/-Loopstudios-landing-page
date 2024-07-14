@@ -47,7 +47,7 @@ footer {
 
     justify-content: space-between;
     flex-direction: row;
-    padding: 20px;
+    padding: 50px;
     background-color: #000;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
