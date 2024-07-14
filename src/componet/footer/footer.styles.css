@@ -62,6 +62,30 @@ footer {
     gap: 0.8rem;
   }
 
+  .links-footer ul li {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .links-footer ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 27px;
+    left: 50%;
+
+    height: 1px;
+    /* background-color: transparent; */
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .links-footer ul li:hover::after {
+    width: 50%; /* Adjust the width as desired */
+    left: 25%; /* Centers the shorter bottom border */
+    background-color: #fff;
+  }
+
   .footer-socials {
     display: flex;
     flex-direction: column;

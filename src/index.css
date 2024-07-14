@@ -12,8 +12,13 @@ body {
   font-style: normal;
 }
 
+body.active {
+  overflow: hidden;
+  height: 100%;
+}
+
 .container {
-  max-width: 1800px;
+  max-width: 1700px;
 
   /* min-height: 100vh; */
   padding: 1rem;

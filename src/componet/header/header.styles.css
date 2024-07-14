@@ -17,7 +17,7 @@ header {
   border: 2px solid #fff;
   margin: 1.5rem;
   padding: 0.7rem;
-  margin-top: 9rem;
+  margin-top: 15rem;
 }
 
 .hero h1 {
@@ -27,24 +27,30 @@ header {
   font-weight: 200;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 850px) {
   header {
     background: url("../../assets/desktop/image-hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    padding: 4rem;
+    padding: 6rem;
   }
 
   .hero h1 {
+    font-size: 5rem;
     display: flex;
     align-items: center;
-    font-size: 6rem;
     flex-wrap: wrap;
+    flex: 1;
   }
 
   .hero {
-    width: 60%;
+    width: 59%;
+    display: flex;
+    margin-top: 12rem;
+
+    /* overflow: hidden; */
+    /* padding: 3rem; */
   }
 }
