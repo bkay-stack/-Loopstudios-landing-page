@@ -27,6 +27,11 @@
     position: fixed;
   }
 
+  .nav-list ul li {
+    font-size: 330px;
+    outline: 1px solid red;
+  }
+
   .ham-menu {
     display: block;
     cursor: pointer;

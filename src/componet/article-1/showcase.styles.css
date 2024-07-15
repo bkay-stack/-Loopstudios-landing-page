@@ -25,7 +25,7 @@
   margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 650px) {
   .showcase {
     display: flex;
     text-align: center;
