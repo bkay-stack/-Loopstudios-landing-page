@@ -14,7 +14,7 @@ const Nav = () => {
           <h1>loopstudio</h1>
         </div>
         {/* nav */}
-        <div className="">
+        <div className="nav-list-wrap">
           <ul className={`nav-list ${isActive ? "active" : ""}`}>
             <li>About</li>
             <li>Careers</li>

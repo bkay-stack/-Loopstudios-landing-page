@@ -72,17 +72,18 @@ footer {
     content: "";
     position: absolute;
     bottom: 0;
-    top: 27px;
     left: 50%;
-
-    height: 1px;
-    /* background-color: transparent; */
-    transition: background-color 0.3s ease-in-out;
+    height: 2px;
+    width: 65%;
+    background-color: white;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add transition for transform */
   }
 
   .links-footer ul li:hover::after {
-    width: 50%; /* Adjust the width as desired */
-    left: 25%; /* Centers the shorter bottom border */
+    transform: translateX(-50%) scaleX(1);
+    transform-origin: bottom left;
     background-color: #fff;
   }
 
