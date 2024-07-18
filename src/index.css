@@ -14,14 +14,14 @@ body {
 
 body.active {
   overflow: hidden;
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-  max-width: 1700px;
-
-  /* min-height: 100vh; */
-  padding: 1rem;
+  max-width: 1500px;
+  padding: 0.3rem;
 }
 
 img {
